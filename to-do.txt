@@ -1,0 +1,42 @@
+To do:
+ javascript para copiar el telefono al click y mensaje pop up png al lado del cursor que diga: "Telefono copiado al portapapeles"   checkar "API Clipboard" para maxivilizar compatibilidad.
+javascript para ampliar los desplegables de index
+hacer un readme en la carpeta de js para explicar por que estan por separado (carga paralela y organizacion)
+hacer un comentario al principio de cada script explicando para que sirve 
+revisar todos los archivos para presentar un proyecto limpio
+comprobar todos los heads de todas las html para cerciorar que favicon y titulos y todo esta correcto (links de style js etc...)
+
+
+css variables
+
+
+:root {
+    --text-red : red;
+}
+
+
+
+Hacer el hover en los productos (cambio de color)
+
+Hacer hover en los links del Nav
+
+Hacer onclick en las cajas de las preguntas frecuentes
+
+Cambair la flecha de hacia abajo hacia arriba en el hover de las preguntas frecuentes
+
+aseguar todos los links de la web
+
+cambiar lista del logo del nav
+
+el logo tiene que ser un link que lleve al home
+
+
+Hacer tema oscuro con foto noche y luciernas CSS
+
+
+
+
+mirar si existe plugin vsc para relinkear sola imagenes y links: ../
+
+
+poner todos los colores de la web en variables del root

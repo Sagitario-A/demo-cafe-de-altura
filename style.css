@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --negro-nav: #2B2A2B;
+    /*barra nav */
+    --negro-boton: #515051;
+    /*boton nav */
+    --negro-footer: #1F1815;
+    /* boton, footer */
+    --verde-web: #2A5B45;
+    /* verde que se usa en la web */
+    --borde-producto: #E3DED7;
+    /* borde de los productos default */
+    --verde-boton-añadir: rgba(42, 91, 69, 0.70);
+    /* Verde botones añadir */
+
+}
+
+/* Estilos generales */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.centerItems {
+    align-items: center;
+}
+
+.startItems {
+    align-items: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* Barra de navegacion */
+
+.nav {
+    color: white;
+    background-color: var(--negro-nav);
+    padding: 12px 40px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+.navLogo {
+    align-items: center;
+    gap: 7.33px;
+}
+
+.logo {
+    font-size: 23.463px;
+    font-weight: 400;
+}
+
+.navLinks {
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.navLinks li {
+    padding: 8px;
+}
+
+.telefonoNav {
+    gap: 24px;
+}
+
+.gapTelefonoNav {
+    gap: 8px;
+    align-items: center;
+}
+
+.botonSesion {
+    color: white;
+    background-color: var(--negro-boton);
+    padding: 12px 24px;
+    align-items: flex-start;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hoverLinks li:hover {
+
+    background: rgba(247, 245, 243, 0.10);
+    padding: 8px;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* Primer div del body  */
+
+
+
+.div1 {
+    justify-content: center;
+    padding: 48px 40px;
+    gap: 24px;
+}
+
+.div1interior {
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+.div1interior h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.div1interior h2 {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.div1interior p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+.botonDiv1 {
+    gap: 16px;
+    align-items: flex-start;
+    border-radius: 4px;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.botonDiv2 {
+    gap: 16px;
+    align-items: flex-start;
+    border-radius: 4px;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.botonDiv3 {
+    gap: 16px;
+    align-items: flex-start;
+    border-radius: 4px;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.botonDiv1color1 {
+    background-color: var(--negro-footer);
+}
+
+.botonDiv1color2 {
+    background-color: var(--verde-web);
+}
+
+.botonDiv2:hover {
+    background-color: var(--negro-boton);
+}
+
+.botonDiv3:hover {
+    background-color: #2a5b45b3;
+}
+
+
+
+/* Segundo div del body (Cards) */
+
+
+
+.divCards {
+    padding: 48px 147px;
+    align-self: stretch;
+    justify-content: center;
+    gap: 24px;
+    background: url(images/photos/cafeSolo.jpg), lightgray 50%;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.divCards h2 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.divCardsTarjetas {
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.card {
+    padding: 24px;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 8px;
+    border: 1px solid #F7F5F3;
+    background: #FFF;
+    width: 268px;
+    height: 184px;
+}
+
+.cardCuadro {
+    padding: 12px;
+    align-items: flex start;
+    gap: 8px;
+    border-radius: 20px;
+    background-color: var(--verde-web);
+}
+
+.cardTitulo {
+    align-self: stretch;
+    text-align: center;
+    color: #2B2A2B;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cardParrafo {
+    align-self: stretch;
+    text-align: center;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+/* Tercer div del body (Producto) */
+
+
+.divProducto {
+    padding: 40px;
+    gap: 40px;
+    align-items: center;
+    /* align-self: stretch; */
+}
+
+.novedades {
+    color: var(--verde-web);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.divContenedorProducto {
+    gap: 24px;
+}
+
+.producto {
+    padding: 24px;
+    gap: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--borde-producto);
+}
+
+.producto:hover {
+    background: #F7F5F3;
+}
+
+.producto:hover .botonAnadir {
+    background-color: #2A5B45;
+    color: #FFF;
+}
+
+.nombrePrecio {
+    gap: 12px;
+}
+
+.nombre {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.precio {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.botonAnadir {
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--verde-boton-añadir);
+
+
+}
+
+.verTodos {
+    gap: 16px;
+}
+
+
+
+/* Cuarto div del body (Preguntas Frecuentes) */
+
+
+
+.divPreguntas {
+    align-self: stretch;
+    padding: 48px 386px;
+    gap: 24px;
+    background: var(--verde-web);
+}
+
+.divPreguntas h2 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+
+.divPreguntasCards {
+    gap: 16px;
+}
+
+.preguntasCards {
+    padding: 24px;
+    width: 668px;
+    gap: 16px;
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.preguntasCardsTitulo {
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.preguntasCardsTitulo h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--negro-nav);
+}
+
+.preguntasCardsDivisor {
+    width: 620px;
+    height: 1px;
+    background: #E3DED7;
+}
+
+.parrafoCardPreguntas {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.oculto1 {
+    display: none;
+}
+
+.oculto2 {
+    display: none;
+}
+
+.noOculto:hover~.oculto1,
+.noOculto:hover~.oculto2 {
+    display: block;
+}
+
+.resolvemosTusDudas {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+
+/* Quinto div (Pruebalo en nuestro coffe shop) */
+
+
+
+.divCafeteria {
+    padding: 44.607px 40px 45.393px 40px;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    background: #F7F5F3;
+}
+
+.divCafeteriaInterior {
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divCafeteriaInterior2 {
+    width: 457px;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.divCafeteriaInterior2 h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--verde-web);
+}
+
+.divCafeteriaInterior2 p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.gapCafeteria {
+    gap: 16px;
+}
+
+.gapCafeteria a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+
+/* Sexto div (Contacto) */
+
+
+
+.divContactoFuera {
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background: #E3DED7;
+}
+
+
+.divContactoDentro {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.divContactoIzquierda {
+    width: 588px;
+    align-items: flex-start;
+    gap: 32px;
+    color: #6B7280;
+}
+
+.divContactoIzquierdaTitulo {
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.divContactoIzquierdaTitulo h3 {
+    color: #111827;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.divContactoIzquierdaTitulo p {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.divContactoIzquierdaDatos {
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+
+}
+
+.divContactoIzquierdaTelefonoEmail {
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 12px;
+}
+
+
+.divContactoIzquierdaTelefono {
+    align-items: center;
+    align-self: stretch;
+    gap: 12px;
+}
+
+.divContactoIzquierdaTelefono p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.spanLink {
+    color: #111827;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+
+
+.divContactoFormularioFuera {
+    width: 588px;
+    padding: 32px 32px 48px;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+}
+
+.divContactoFormularioDentro {
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.formularioNombre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    width: 470px;
+}
+
+.telefonoAncho {
+    width: 389px;
+    height: 16px;
+}
+
+
+.formularioNombreInput {
+    padding: 9px 13px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    width: 470px;
+
+}
+
+.telefonoSelector {
+    padding: 9px 13px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+}
+
+.formlarioAreaTextoVacio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    width: 470px;
+}
+
+.textArea {
+    height: 122px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    padding: 9px 13px;
+    width: 470px;
+
+}
+
+.checkBoxPolitica {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 12px;
+}
+
+.checkBoxPolitica p {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.spanPolitica {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+.botonEnviar {
+    display: flex;
+    padding: 12px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--verde-web);
+    font-weight: 600;
+    color: #FFF;
+    border: none;
+}
+
+
+
+/* Spetimo div Footer */
+
+
+
+.footerFuera {
+    display: flex;
+    padding-top: 28.607px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 37.732px;
+    align-self: stretch;
+    background: #1F1815;
+}
+
+.footerDentro {
+    display: flex;
+    width: 1200px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+.logoFooter {
+    color: #FFF;
+    font-size: 23.463px;
+}
+
+.footerDentroAbajo {
+    width: 1132px;
+    height: 152px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerTeAyudamos {
+    display: flex;
+    width: 255.333px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footerTeAyudamos p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.botonTelefono {
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: #515051;
+}
+
+.botonTelefono p {
+    font-weight: 600;
+    color: #FFF;
+}
+
+
+.linksFooter1 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+.linksFooter1 * p {
+    height: 16px;
+    overflow: hidden;
+    color: #FFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.linksFooter2 {
+    display: flex;
+    width: 255.333px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.linksFooter2 * p {
+    height: 16px;
+    overflow: hidden;
+    color: #FFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.footerDerechosReservados {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #2B2A2B;
+}
+
+.footerDerechosReservados p {
+    color: #FFF;
+    font-weight: 600;
+}
