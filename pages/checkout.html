@@ -3,9 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout - Café de Altura</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     
+    <!-- Header (NAV) -->
+
+
+    <header>
+
+        <nav class="nav flex">
+
+            <a href="../index.html" class="navLogo flex">
+                <p class="logo">cafedealtura.com</p>
+                <img src="../images/icons/coffe_white.svg" alt="logo cafedealtura">
+            </a>
+
+            <ul class="navLinks hoverLinks flex">
+                <li><a href="">Tienda</a></li>
+                <li><a href="pages/shop.html">Suscripción</a></li>
+                <li><a href="">Para empresas</a></li>
+                <li><a href="">Sobre nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <div class="telefonoNav flex">
+                <a href="tel:+34919490518" class="flex">
+                    <p class="gapTelefonoNav flex"><img src="../images/icons/phone_white.svg" alt="phone_white">+34 919 49 05 18</p>
+                </a>
+                <button class="botonSesion logo">Iniciar Sesión</button>
+            </div>
+            <a href="basket.html"><img src="../images/icons/basket_white.svg" alt="basket_white"></a>
+        </nav>
+    </header>
+
+
+
+    <!-- Cuerpo de la web (DIV PRINCIPAL) -->
+
+
+
+
+
+    <div class="divCheckoutFuera">
+
+        <h2 class="tituloCheckout">Checkout</h2>
+        
+
+
+
+
+        
+        <div class="divCheckoutDentro">
+
+
+            <div class="divCheckoutDentroIzquierda">
+
+                <h3 class="totalCarritoCSS">Selecionar método de pago</h3>
+
+
+                
+                <div class="tarjetaDebito">
+
+                    <input type="radio">
+                    <div class="tarjetaDebitoDentro">
+
+                        <p class="subtotalCSS">Tarjeta de débito</p>
+                        
+                        <p>Opción estándar sin seguimiento</p>
+
+                    </div>
+                    <!-- <div class="tarjetaDebitoFinalVacio"></div> -->
+
+
+                </div>
+                
+
+
+                <div class="formularioTarjeta">
+
+                    <div class="formularioTarjetaNombre">
+
+                        <p class="datosTarjetaCSS">Titular</p>
+                        
+                        <input type="text" placeholder="Nombre del titular" class="formularioBoxNombre"></input>
+
+                    </div>
+                    
+                    <div class="formularioTarjetaNombre">
+
+                        <p class="datosTarjetaCSS">Número de la tarjeta</p>
+                        
+                        <input type="text" placeholder="1234 1234 1234 1234" class="formularioBoxNombre"></input>
+
+                    </div>
+                    
+                    <div class="formularioBoxTarjetaFuera">
+
+                        <div class="formularioBoxTarjetaDentro">
+
+                            <p class="datosTarjetaCSS">Fecha de caducidad</p>
+
+                            <input type="text" class="boxTarjeta" placeholder="MM / YY">
+
+                        </div>
+                        
+                        
+                        <div class="formularioBoxTarjetaDentro">
+
+                            <p class="datosTarjetaCSS">CVC</p>
+
+                            <input type="text" class="boxTarjeta" placeholder="123">
+
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                
+
+
+                <div class="divisorCheckout"></div>
+                
+
+
+                <div class="datosTransferencia">
+
+                    <input type="radio" class="radioCSS">
+
+                    <div class="transferenciaDentro">
+                        <p class="subtotalCSS">Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
+
+                        <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+
+                    </div>
+
+                </div>
+                
+
+
+                
+                <div class="divisorCheckout"></div>
+                
+
+
+                <div class="divBizum"   >
+
+                    <input type="radio" class="radioCSS">
+
+                    <p class="subtotalCSS">Bizum</p>
+
+                    <img src="../images/icons/bizum.svg" alt="bizum">
+
+                </div>
+                
+                
+                
+                <h3 class="totalCarritoCSS">Dirección de envío</h3>
+                
+                
+                
+                <div class="formularioEnvioFuera">
+
+                    <div class="formularioEnvioDentro">
+                        <p>Nombre</p>
+                        
+                        <input type="text" class="boxDireccion">
+                    </div>
+
+                    <div class="formularioEnvioDentro">
+                        <p>Apellidos</p>
+                        
+                        <input type="text" class="boxDireccion">
+                    </div>
+
+                    <div class="formularioEnvioDentro">
+                        <p>Télefono</p>
+                        
+                        <input type="text" class="boxDireccion">
+                    </div>
+
+                    <div class="formularioEnvioDentro">
+                        <p>Email</p>
+                        
+                        <input type="email" class="boxDireccion">
+                    </div>
+
+                    <div class="formularioEnvioDentro">
+                        <p>País</p>
+                        
+                        <select name="pais" id="pais"  class="boxDireccion1">
+                            <option value="Default">Seleccionar</option>
+                            <option value="españa">España</option>
+                        </select>
+                    </div>
+
+                    <div class="poblacion">
+
+                        <div class="poblacionDentro">
+
+                            <p>Población</p>
+
+                            <input type="text" class="poblacion1Box">
+
+                        </div>
+                        
+                        <div class="poblacionDentro">
+
+                            <p>CP</p>
+
+                            <input type="text" class="poblacion1Box" placeholder="123">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="calleFuera">
+
+                        <div class="calleDentro">
+                            <p class="datosNombreCSS">Calle</p>
+
+                            <input type="text" class="poblacionBox">
+                        </div>
+                        <div class="calleDentro">
+                            <p class="datosNombreCSS">Nº</p>
+
+                            <input type="text" class="poblacionBox">
+                        </div>
+                        <div class="calleDentro">
+                            <p class="datosNombreCSS">Piso</p>
+
+                            <input type="text" class="poblacionBox">
+                        </div>
+                        <div class="calleDentro">
+                            <p class="datosNombreCSS">Puerta</p>
+
+                            <input type="text" class="poblacionBox">
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            
+            
+
+
+            <div class="divCheckoutTotal">
+
+                <div class="totalDentro">
+                    <h3 class="totalCarritoCSS">Toltal del carrito</h3>
+                    <div class="divisorTotalCarrito"></div>
+                    <div class="subtotal">
+                        <p>SUBTOTAL</p>
+                        
+                        <p class="subtotalCSS">18,00€</p>
+                    </div>
+                    <div class="subtotal">
+                        <p>ENVÍO</p>
+                        
+                        <p class="subtotalCSS">GRATIS</p>
+
+                    </div>
+                    <div class="divisorTotalCarrito"></div>
+                    <div class="totalEnvio">
+                        <p>TOTAL</p>
+                        
+                        <div class="precioEnvioTotal">
+                            <p class="subtotalCSS">18,00€</p>
+
+                            <p class="incluyeIvaCSS">Incluye 3,78€ de IVA</p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+                
+                <a href="success.html"><div class="botonPagar">Pagar y realizar pedido</div></a>
+                
+    
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Footer -->
+
+
+    <div class="footerDerechosReservados">
+        <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+    </div>
+
+
+
+
 </body>
 </html>

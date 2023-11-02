@@ -33,6 +33,8 @@ el logo tiene que ser un link que lleve al home
 
 Hacer tema oscuro con foto noche y luciernas CSS
 
+añadir etiqueta main a la etiqueta principal y explicar en un comentario que es para ayudar al motor de busqueda
+
 
 
 
@@ -40,3 +42,17 @@ mirar si existe plugin vsc para relinkear sola imagenes y links: ../
 
 
 poner todos los colores de la web en variables del root
+
+
+hacer el hover en el formulario
+
+
+todos los estilos del texto
+
+
+entender la propiedad flex CSS (Flex 1 0 0)
+
+
+cambiar los input radio a color verde (creo que es javascript)
+
+mirar el ancho de los box de las tarjetas (y algunos otros) los hago con medidas de pocero y deberia ser automatico (deberia)

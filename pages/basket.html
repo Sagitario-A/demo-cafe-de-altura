@@ -1,11 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cesta - Café de Altura</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    
+
+    <!-- Nav -->
+
+
+
+    <header>
+
+        <nav class="nav flex">
+
+            <a href="../index.html" class="navLogo flex">
+                <p class="logo">cafedealtura.com</p>
+                <img src="../images/icons/coffe_white.svg" alt="logo cafedealtura">
+            </a>
+
+            <ul class="navLinks hoverLinks flex">
+                <li><a href="">Tienda</a></li>
+                <li><a href="pages/shop.html">Suscripción</a></li>
+                <li><a href="">Para empresas</a></li>
+                <li><a href="">Sobre nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <div class="telefonoNav flex">
+                <a href="tel:+34919490518" class="flex">
+                    <p class="gapTelefonoNav flex"><img src="../images/icons/phone_white.svg" alt="phone_white">+34 919 49 05 18</p>
+                </a>
+                <button class="botonSesion logo">Iniciar Sesión</button>
+            </div>
+            <a href="basket.html"><img src="../images/icons/basket_white.svg" alt="basket_white"></a>
+        </nav>
+    </header>
+
+
+    <!-- Cestas -->
+
+
+
+    <div class="divCestaFuera">
+        <h2 class="cestaCSS">Cesta (2)</h2>
+
+        <div class="divCestaDentro">
+
+            <div class="divCestaDentroIzquierda">
+
+                <h3 class="tituloCestaCSS">Productos</h3>
+
+                <div class="divCestaProducto">
+
+                    <div class="selectorCantidad">
+                        <img src="../images/icons/simboloNegativo.svg" alt="menos" class="pointer">
+                        <div class="cantidadCirculo">1</div>
+                        <img src="../images/icons/simboloPositivo.svg" alt="mas" class="pointer">
+                    </div>
+
+
+                    <img src="../images/products/colombiaLosNaranjos.png" alt="produccto"
+                        class="divCestaProductoImagen">
+                    <div class="divCestaProductoNombre">
+                        <p class="nombreProductoCSS">Colombia Los Naranjos</p>
+                        <p>Paquete de café, 250 gr</p>
+                    </div>
+                    <h3>9,00€</h3>
+
+                </div>
+
+                <div class="divCestaDivisor"></div>
+
+                <div class="divCestaProducto">
+
+                    <div class="selectorCantidad">
+                        <img src="../images/icons/simboloNegativo.svg" alt="menos" class="pointer">
+                        <div class="cantidadCirculo">1</div>
+                        <img src="../images/icons/simboloPositivo.svg" alt="mas" class="pointer">
+                    </div>
+
+
+                    <img src="../images/products/colombiaLacasita.png" alt="produccto" class="divCestaProductoImagen">
+                    <div class="divCestaProductoNombre">
+                        <p class="nombreProductoCSS">Colombia La Casita</p>
+                        <p>Paquete de café, 250 gr</p>
+                    </div>
+                    <h3>9,00€</h3>
+
+                </div>
+
+                <h3>Seleccionar envío</h3>
+
+                <div class="tipoEnvio">
+
+                    <input type="radio" class="radioCSS">
+                    <div class="tipoEnvioCentro">
+                        <p class="opcionesEnvioCSS">Envío 7-5 días</p>
+
+                        <p>Opción estándar sin seguimiento</p>
+                    </div>
+                    <h3>GRATIS</h3>
+
+
+                </div>
+
+                <div class="divCestaDivisor"></div>
+
+                <div class="tipoEnvio">
+
+                    <input type="radio" class="radioCSS">
+                    <div class="tipoEnvioCentro">
+                        <p class="opcionesEnvioCSS">Envío urgente 24h</p>
+
+                        <p>Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de las 13:00).</p>
+                    </div>
+                    <h3>GRATIS</h3>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="divCestaDentroDerecha">
+
+                <div class="divCestaDentroDerechaArriba">
+
+                    <h3>Total del Carrito</h3>
+
+
+
+                    <div class="divCestaDerechaDivisor"></div>
+
+
+
+                    <div class="divCestaDentroDerechaTotales">
+                        <p>SUBTOTAL</p>
+                        <p class="cestaPrecios">18,00€</p>
+                    </div>
+
+
+                    <div class="divCestaDentroDerechaTotales">
+                        <p>ENVÍO</p>
+                        <p class="cestaPrecios">GRATIS</p>
+                    </div>
+
+
+                    <div class="divCestaDerechaDivisor"></div>
+
+
+                    <div class="divCestaDentroDerechaTotales">
+
+                        <p>TOTAL</p>
+
+                        <div class="totalTotal">
+
+                            <p class="cestaPrecios">18,00€</p>
+
+                            <p id="totalIva">Incluye 3,78€ de IVA</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="divCestaDentroDerechaAbajo">
+
+                    <a href="checkout.html"><button class="botonCheckout">Ir a checkout</button></a>
+
+                    <a href="shop.html"><button class="seguirComprando">Seguir comprando</button></a>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+
+
+
+    <div class="footerDerechosReservados">
+        <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+    </div>
+
+
 </body>
+
 </html>
