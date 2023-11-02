@@ -1517,3 +1517,44 @@ a:visited {
     font-weight: 400;
     color: #515051;
 }
+
+
+
+
+
+
+/* Tema oscuro */
+
+
+
+.tema-oscuro {
+    background-color: var(--negro-nav);
+    color: #FFF;
+}
+
+
+.sizeMoon {
+    width: 25px;
+    height: 25px;
+}
+
+.producto-tema-oscuro {
+    padding: 24px;
+    gap: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--borde-producto);
+    cursor: pointer;
+}
+
+.producto-tema-oscuro:hover {
+    background: #5F5F5F;
+}
+
+.botonAnadir-tema-oscuro {
+    background: #5F5F5F;
+}
+
+
+.cardTitulo-tema-oscuro {
+    background: #5F5F5F;
+}
