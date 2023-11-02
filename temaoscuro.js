@@ -1,11 +1,11 @@
-// En tu archivo JavaScript
-const themeToggle = document.getElementById('cambiar-tema');
+
+const cambioTema = document.getElementById('cambiar-tema');
 const body = document.body;
 
 // Verificar si el tema almacenado en el caché y aplicarlo
-const storedTheme = localStorage.getItem('tema');
-if (storedTheme) {
-  body.classList.add(storedTheme);
+const temaAlmacenado = localStorage.getItem('tema');
+if (temaAlmacenado) {
+  body.classList.add(temaAlmacenado);
 
   // Cambia la clase de los elementos .producto al cargar la página
   if (body.classList.contains('tema-oscuro')) {
@@ -28,7 +28,7 @@ if (storedTheme) {
 }
 
 // Manejar el cambio de tema cuando se hace clic en el botón
-themeToggle.addEventListener('click', () => {
+cambioTema.addEventListener('click', () => {
   if (body.classList.contains('tema-oscuro')) {
     body.classList.remove('tema-oscuro');
     localStorage.setItem('tema', 'tema-claro');
